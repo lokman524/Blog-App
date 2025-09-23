@@ -14,7 +14,6 @@ app.use(cors());
 
 app.use('/posts', postRoutes);
 
-//const CONNECTION_URL = "mongodb+srv://test:test@blog-app.lbmuqso.mongodb.net/?retryWrites=true&w=majority&appName=Blog-App";
 const PORT = process.env.PORT || 3000;
 
 mongoose.connect(process.env.CONNECTION_URL)
